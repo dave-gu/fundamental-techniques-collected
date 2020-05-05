@@ -1,0 +1,32 @@
+001_introspect dotnet assembly using ildasm
+
+we just started trying to utilize this XInputDotNet library.
+https://github.com/speps/XInputDotNet
+
+the documentation doesn't tell us what to do
+other than the first step of adding the reference
+
+let's see what is going on with XInputDotNetPure.dll
+https://docs.microsoft.com/en-us/dotnet/standard/assembly/view-contents
+this microsoft document indicates that you can target an executable [.exe]
+using ildasm.exe to read the MSIL information in the file.
+we know that the file is an assembly because the author has told us that.
+
+here is the sequence of steps we used in order to execute
+the task of opening the dll with the exe
+
+Win+R [open run dialog]
+"cmd" , enter
+"cd /d " +[path-to-folder-containing-dll] , enter
+Win+6 [activate currently open and pinned Everything.exe on taskbar]
+"ildasm.exe"
+at this point i see that i have 19 of these and i choose one in particular that i think should work
+i left clicked it (this wasn't actually necessary)
+shift + right-clicked it (you can also use "appskey")
+activated copy as path
+focus back on the cmd window
+right click and paste the path
+" xinputdotnetpure.dll" , enter
+
+then you would see this: [[ildasm.exe-xinputdotnetpure.dll_.png]]
+okay, that's it for this technique!

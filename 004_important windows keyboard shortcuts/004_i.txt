@@ -1,0 +1,64 @@
+Win+E [open explorer]
+Win+R [run]
+Win+F [don't bother using windows search, get "everything search engine"]
+Win+D [desktop]
+Ctrl+Esc [open start menu]
+Win + # [activate #th icon on taskbar]
+Shift + Click on Taskbar Icon [open new instance of that program]
+Ctrl + Click on Taskbar Icon
+^[activate a window of a stacked taskbar icon without listing all windows and clicking]
+You can also Win+Ctrl+#
+Alt+Esc [send a window to the back]
+Alt+Tab works in a certain way. the behavior of it is that
+the first chosen window will be the most recent and the second chosen window
+will be the second most recent etc. so if you have three programs you need to switch
+between then you can elevate one towards the most recents and then keep hitting
+alt and tab twice and releasing alt and that would cycle through three programs...
+
+Alt+Space activates the Titlebar Right Click Menu which shows
+[restore move size minimize maximize close]
+
+an advanced technique to follow up with that is that you can try
+Alt+Space, s, downarrow,rightarrow, and move the mouse,
+which allows you to resize the window from the lower right corner without needing
+to click drag. also you can resize the windows slowly or move them with the arrow keys
+and cancel the movement or size with esc and confirm it with enter.
+
+CtrlShiftEsc = open taskmgr
+
+Another thing is that if you ShiftRightClick on the taskbaricons
+you can select the classic stacked side by side and cascade options to rearrange windows.
+
+Likewise the ShiftRightClick can allow you to Copy As Path a MultipleItemSelection of files from explorer.
+
+*on multiple item selections:
+hold ctrl to add or remove from the selection while single left clicking
+^likewise you can hold ctrl and navigate with arrows and then hit space to activate items and thereby add/remove them
+hold shift to add or remove from the selection in a range from the last item
+
+If you hold CTRL while you open a folder in wexplorer it will open in a new window whereas normally it opens in the same.
+
+Drag and Dropping files will copy if it is a different drive and move if it is the same drive.
+
+Hodling alt while you drag and drop a file or folder will create a Shortcut
+
+Shortcuts are a magical microsoft artifact where some kind of "distributed link tracking" service will monitor
+the paths and update them if the destination moves...
+
+in XP you used to be able to rearrange icons within a folder not according to the grid if the size was set to one of the icon sizes.
+you can still have spatial navigation for icons in explorer in windows 7 if you can find the correct registry key to modify
+to "enable full row select" but anyways if the folder falls out of MRU most recently used list, then those particular icon locations will be lost.
+
+the MKLINK command line utility provided by microsoft can allow you to create a directory symbolic link which is like a shortcutted folder.
+
+the drive letters that are assigned at startup by Windows can be set based on the drive Volume Serial Number
+(for a new drive that has the same volume serial number as a previously connected drive)
+i think that if for instance your C drive was 9351-56AA then you would need to apply that Volume Serial Number to the boot drive and likewise
+that Volume Serial Number should not be on the original drive if it is still attached
+if you are cloning your hard drive this is something that you need to consider but unfortunately i can't remember
+all of the details at the moment.  don't know why i wanted to note this just now but I did!
+
+here's a few more shortcuts
+Alt+Printscreen [screenshot only teh active window]
+Alt+F4 [close the active window]
+Win+Pause/Break [opens a certain System pane in Control Panel]

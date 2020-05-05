@@ -1,0 +1,48 @@
+procmon.exe Process Monitor
+procexp.exe Process Explorer
+
+-we can use these microsoft sysinternals utilities by mark russinovich
+in order to view processes.
+
+msconfig
+services.msc
+%windir%\system32\taskschd.msc /s
+-msconfig takes precedence over services.msc but they both do roughly the same thing.
+
+there are also some utilities by nirs at the "nirsoft" website such as autoruns
+that you can check out
+
+sc
+net
+taskkill
+- i will explain how to use these command line utilities.
+
+first of all. they are located in the "Path" since c:\windows\system32 is in the path.
+since they are in teh "path" their commands can be run from any location
+
+try this unheard of procedure with me:
+Win + E [open windows explorer]
+Alt + D [focus location bar. you can also use Ctrl+L i think]
+input "cmd /k sc query"
+hit enter
+
+this will open a new command prompt
+which will not close after execution of the sc query command
+
+now try this:
+sc query > sc-query.txt [right caret pipes the output to the file]
+type sc-query.txt [this echos the file contents to the prompt]
+sc-query.txt [this executes the default .txt file program to open the file]
+
+okay so that is one way you can look at the services using teh command line.
+
+now let's cover net.exe
+we can use net to stop services by writing "net stop "
+followed by the short or long names that are given by the sc query.
+
+net stop wuauserv
+
+taskkill /f /im *update*
+
+now to wrap up a command prompt session let's do
+doskey /history > doskey-history.txt

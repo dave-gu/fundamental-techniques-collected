@@ -1,0 +1,3 @@
+ffmpeg -i target.mkv -c:v copy -c:a copy target.mp4
+doskey /history > doskeyffmpeg.txt
+https://forum.blackmagicdesign.com/viewtopic.php?f=21&t=56379

@@ -1,0 +1,47 @@
+dir /s /b > c:\folder\bare-format-list-directories-subdirectories.txt
+doskey /history > c:\folder\doskey-history.txt
+cmd /k
+start
+pause
+taskkill /f /im
+sc query
+net stop SERVICENAME
+services.msc
+msconfig
+devmgmt.msc
+diskmgmt.msc
+regedit
+tasklist
+explorer.exe
+
+//if explorer hangs
+taskkill /f /im explorer.exe
+explorer.exe
+
+//if connectivity lost
+ipconfig /release *
+ipconfig /renew *
+
+echo hello
+type readme.txt
+title COMMAND PROMPT
+cd %windir%
+cd %appdata%
+path %path%;C:\MinGW
+help
+schtasks
+mklink /?
+
+//Ctrl + C = hard cancel
+
+attrib /?
+icacls
+bcdedit /?
+bcdedit
+
+//https://www.powershelladmin.com/wiki/Get_Folder_Size_with_PowerShell,_Blazingly_Fast
+//one possible directory size method
+Powershell:
+Set-ExecutionPolicy Restricted //normal
+Set-ExecutionPolicy RemoteSigned
+Set-ExecutionPolicy Unrestricted
